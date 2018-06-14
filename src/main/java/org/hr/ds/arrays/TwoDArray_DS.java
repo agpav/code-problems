@@ -1,4 +1,4 @@
-package org.hr.algorithms.arrays;
+package org.hr.ds.arrays;
 
 import java.util.Arrays;
 import java.util.OptionalInt;

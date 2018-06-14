@@ -1,9 +1,9 @@
-package org.hr.algorithms.linkedlists;
+package org.hr.ds.linkedlists;
 
 import java.io.IOException;
 import java.util.Scanner;
 
-public class InsertaNodeattheHeadofaLinkedList {
+public class InsertaNodeattheTailofaLinkedList {
 	static class SinglyLinkedListNode {
 		public int data;
 		public SinglyLinkedListNode next;
@@ -52,6 +52,12 @@ public class InsertaNodeattheHeadofaLinkedList {
 		}
 	}
 
+	static SinglyLinkedListNode insertNodeAtHead(SinglyLinkedListNode head, int data) {
+		SinglyLinkedListNode node = new SinglyLinkedListNode(data);
+		node.next = head;
+		return node;
+	}
+
 	static SinglyLinkedListNode getTail(SinglyLinkedListNode head) {
 		if (head == null) {
 			return null;
@@ -73,7 +79,7 @@ public class InsertaNodeattheHeadofaLinkedList {
 		for (int i = 0; i < llistCount; i++) {
 			int llistItem = scanner.nextInt();
 			scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-			SinglyLinkedListNode llist_head = insertNodeAtTail(llist.head, llistItem);
+			SinglyLinkedListNode llist_head = insertNodeAtHead(llist.head, llistItem);
 			llist.head = llist_head;
 		}
 

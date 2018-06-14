@@ -1,4 +1,4 @@
-package org.hr.algorithms.linkedlists;
+package org.hr.ds.linkedlists;
 
 import java.util.Scanner;
 
